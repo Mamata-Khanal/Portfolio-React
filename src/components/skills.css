@@ -1,0 +1,25 @@
+.skills{
+    padding: 50px;
+    text-align: center;
+    background-color: #f4f4f4;
+    background-image: url(../../public/test.avif);
+}
+
+.skills h2{
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+.skills ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills li {
+    display:inline-block;
+    margin:10 px;
+    padding: 10px 20px;
+    background-color: #282c34;
+    color: white;
+    border-radius: 5px;
+}

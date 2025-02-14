@@ -1,0 +1,47 @@
+.projects{
+    padding: 50px;
+    text-align: center;
+    background-image: url('../../public/projects.jpg')
+}
+
+.projects h2{
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.project-list{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project-item{
+    background-color: #f4f4f4;
+    padding:20px;
+    margin:10px;
+    border-radius: 5px;
+    width: 30%;
+    transition:0.3s,
+}
+
+.project-item h3{
+    font-family: 1.5em;
+    margin-bottom: 10px;
+}
+
+.project-item p{
+    font-size: 1em;
+}
+
+/* Responsive design */
+@media(max-width :768px){
+    .project-item{
+        width:45%;
+    }
+}
+
+@media (max-width: 480px){
+    .project-item{
+        width: 100%;
+    }
+}
