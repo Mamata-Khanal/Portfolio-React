@@ -8,11 +8,14 @@ body {
 
 .navbar {  
     background-color: #282c34; /* Dark background for navbar */  
-    padding: 1rem 2rem; /* Padding around the navbar */  
-    position: fixed; /* Fix position at the top */  
+    padding: 1.5em 2em ;  /* padding for the element */
+    position:fixed; /* Fix position at the top */  
     width: 100%; /* Full width */  
     top: 0; /* Position at the top */  
-    z-index: 1000; /* Ensure it sits above other elements */  
+    z-index: 100; /* Ensure it sits above other elements */  
+    display: flex;/* Use flexbox for layout */
+    justify-content:flex-end /* Align links to the right */ 
+   
 }  
 
 .navbar-links {  
@@ -20,13 +23,16 @@ body {
     display: flex; /* Flexbox for horizontal layout */  
     gap: 2rem; /* Spacing between links */  
     margin: 0; /* Remove default margin */  
-    padding: 0; /* Remove default padding */  
+    padding: 0; /* Remove default padding */ 
 }  
 
 .navbar-links li {  
     color: #ffffff; /* White text color */  
     cursor: pointer; /* Cursor indicating clickable */  
     transition: color 0.3s; /* Smooth transition for color change */  
+    &:last-child{
+        padding-right: 5em;
+    }
 }  
 
 .navbar-links li:hover {  
@@ -35,7 +41,6 @@ body {
 
 .navbar-links li.active {  
     font-weight: bold; /* Highlight active links */  
-    border-bottom: 2px solid #61dafb; /* Bottom border for active section */  
 }
 
 
@@ -46,7 +51,7 @@ body {
         align-items: flex-start;
     }
     .navbar-links{
-        margin-top: 10px;
+        margin-top: 20px;
     }
     .navbar-links li{
         margin: 10px 0;

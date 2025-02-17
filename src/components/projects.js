@@ -8,17 +8,19 @@ const Projects = () =>{
             <div className='project-list'>
                 <div className='project-item'>
                     <h3> Project 1</h3>
-                    <p> Description of project 1.</p>
+                    <p> Creating and executing test cases</p>
                 </div>
 
                 <div className='project-item'>
                     <h3> Project 2</h3>
-                    <p> Description of project 2.</p>
+                    <p> Manual and Automation Testing.<br></br>
+                        Mobile App Testing 
+                    </p>
                 </div>
 
                 <div className='project-item'>
                     <h3> Project 3</h3>
-                    <p> Description of project 3 </p>
+                    <p> API and Postman Testing </p>
                 </div>
             </div>
         </section>
