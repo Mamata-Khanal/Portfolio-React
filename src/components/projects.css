@@ -1,7 +1,14 @@
 .projects{
     padding: 50px;
-    text-align: center;
-    background-image: url('../../public/projects.jpg')
+    text-align: top;
+    background-image: url('../../public/projects.jpg');
+    height:100vh; /* Ensures the section takes up the full viewport height*/
+    display:flex;
+    flex-direction: column;
+    justify-content: top; /* Vertically centers the content */
+    align-items: top; /* Horizontally centers the content */
+    box-sizing: border-box; /* Ensures padding is included in the height calculation */
+    
 }
 
 .projects h2{

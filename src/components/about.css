@@ -1,7 +1,12 @@
 .about{
  padding: 50px;
  text-align: center;
-
+ height:100vh; /* Ensures the section takes up the full viewport height*/
+ display:flex;
+ flex-direction: column;
+ justify-content: center; /* Vertically centers the content */
+ align-items: center; /* Horizontally centers the content */
+ box-sizing: border-box; /* Ensures padding is included in the height calculation */
 }
 
 .about h2 {
@@ -13,4 +18,5 @@
     font-size: 1.2em;
     max-width: 600px;
     margin: 0 auto;
+    
 }
