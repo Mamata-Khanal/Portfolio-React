@@ -1,14 +1,13 @@
 import React from 'react';
 import './App.css';
-import Header from './components/header';
-import Navbar from './components/navbar'; 
-import About from './components/about';
-import Skills from './components/skills';
-import Projects from './components/projects';
-import Contact from './components/contact';
-import Footer from './components/footer';
-
-
+import Header from './pages/header';
+import Navbar from './pages/navbar/navbar';
+import About from './pages/about';
+import Skills from './pages/skill';
+import Projects from './pages/project';
+import Contact from './pages/contact';
+import Footer from './pages/footer';
+import ScrollToTopButton from './pages/footer/ScrollToTopButton';
 
 function App(){
   return (
@@ -20,8 +19,7 @@ function App(){
   <Projects/>
   <Contact/>
   <Footer/>
-  
-      
+  <ScrollToTopButton/>
     </div>
   );
 }

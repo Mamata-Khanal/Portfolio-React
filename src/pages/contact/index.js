@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './contact.css';
+import './index.css';
 
 // Import Font Awesome (if not already set up in your project)
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
