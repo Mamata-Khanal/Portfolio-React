@@ -40,6 +40,10 @@
     font-size: 1em;
 }
 
+.training-list ul{
+    list-style-type:none;
+}
+
 /* Responsive design */
 @media(max-width :768px){
     .project-item{

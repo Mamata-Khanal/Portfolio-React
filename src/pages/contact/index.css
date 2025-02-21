@@ -1,110 +1,57 @@
-.contact{
-    padding:50 px;
-    text-align: center;
-    background-color: #282c34;
-    color:white;
+.contact {
+  min-height: calc(100vh - 66px);
+  text-align: center;
+  background-color: #e4e4e4;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.contact h2{
-    font-size: 2em;
-    margin-bottom: 2opx;
+.contact h2 {
+  font-size: 2em;
+  margin-bottom: 2opx;
 }
 
-.contact form{
-    max-width: 600px;
-    margin:0 auto;
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-.contact input, .contact textarea{
-    width:100%;
-    padding:10px;
-    margin:10px 0;
-    border:none;
-    border-radius: 5px;
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
 }
 
-.contact button{
-    padding:10px 20px;
-    background-color: #10e2b5;
-    border:none;
-    border-radius: 5px;
-    cursor:pointer;
-
+.contact button {
+  padding: 10px 20px;
+  background-color: #10e2b5;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
-.contact button:hover{
-    background-color: #21a1f1;
-}
-
-.success-message{
-    margin-top: 15px;
-    color:#06b64f;
-    font-weight: bold;
-    text-align: center;
+.contact button:hover {
+  background-color: #21a1f1;
 }
 
-.contact-info{
-    margin-top: 20px;
-    text-align: right;
-    
+.success-message {
+  margin-top: 15px;
+  color: #06b64f;
+  font-weight: bold;
+  text-align: center;
 }
 
-.contact-info p{
-    font-size: 1.1em;
-    margin-bottom:10px;
-    padding-top: 0%;
+.contact-info {
+  margin-top: 20px;
+  text-align: right;
 }
 
-.contactInfo h3{
-    font-size: 1.5em;
-    
-}
-
-.contactInfo{
-    text-align:Right;
-    display: flex;
-    justify-content: flex-end;
-    padding: 20px; 
-    margin:20px; 
-}
-
-
-.email-link{
-    display:flex;
-    align-items:flex-end;
-    justify-content: flex-end;
-    gap:10px;
-    font-size: 1.2em;
-    color:#d44638; /* Gmail like color for email */
-    padding: 10px;
-}
-
-.email-link a{
-    color:whitesmoke; /* Inherit the color from the parent */
-    text-decoration: none;
-}
-
-.email-link a:hover{
-    text-decoration: underline;
-}
-
-.social-links{
-    display:flex;
-    justify-content:flex-end;
-    gap: 20px;
-    margin: 10px;
-    padding: 10px;
-}
-
-.social-links a {
- color:whitesmoke;
- font-size: 1.5em;
- transition: color 0.3s ease;
-}
-
-
-.social-links a:hover{
-    color:#0073b1;
-}
-.icon{
-    vertical-align: -webkit-baseline-middle;
+.contact-info p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  padding-top: 0%;
 }

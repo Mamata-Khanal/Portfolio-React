@@ -20,3 +20,51 @@
     margin: 0 auto;
     
 }
+
+.resume-button{
+  padding: 10px 20px;
+  background-color: #0d8026;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+
+}
+
+.resume-button:hover{
+    background-color: #0056b3;
+}
+
+
+
+.about h3{
+    margin-bottom: 0%;
+    text-align: left;
+    padding: 20px;
+}
+
+.about ul{
+    list-style-type:none;
+    padding-left: 0%;
+}
+ .about li{
+    margin-bottom: 8px;
+    line-height: 1.6;
+ }
+
+ .about-photo{
+    flex: 100px; /* Adjust the width of the photo*/
+    margin-top: 5px;
+    margin-right: auto; /*  Push the image to the right */
+    margin-left: 50px;
+
+ }
+
+ .about-photo img {
+    width: 200px;
+    height: 300px; /* Maintain the aspect ratio */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+}

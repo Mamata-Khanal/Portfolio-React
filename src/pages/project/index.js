@@ -23,6 +23,15 @@ const Projects = () =>{
                     <p> API and Postman Testing </p>
                 </div>
             </div>
+
+
+            {/* Training and certification field*/}
+            <h2> Training and certification </h2>
+            <div className='training-list'> <ul>
+                <li><h3><strong> Data Science ( Deerwalk Institute of technology) </strong> </h3></li>
+                <li> <h3> <strong> Graphics Designing (Code For Change) </strong></h3> </li>
+            </ul>
+            </div>
         </section>
     );
 };
