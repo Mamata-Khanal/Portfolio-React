@@ -1,31 +1,69 @@
+/* General Styles */
 .skills{
-    padding: 50px;
+    padding: 2rem;
     text-align: center;
-    background-color: #f4f4f4;
-    background-image: url('../skill/index.css');
-    height:100vh; /* Ensures the section takes up the full viewport height*/
-    display:flex;
-    flex-direction: column;
-    justify-content: center; /* Vertically centers the content */
-    align-items: center; /* Horizontally centers the content */
-    box-sizing: border-box; /* Ensures padding is included in the height calculation */
+    background-color:#f9f9f9;
+    justify-content: center; /* Center the contact container horizontally */
+    align-items: center; /* Center the contact container vertically */
+    min-height: 100vh; /* Ensure the section takes up the full viewport height */
 }
 
-.skills h2{
-    font-size: 2em;
-    margin-top: 20px;
+.timeline{
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-.skills ul{
-    list-style-type: none;
+.timeline-bar{
+    position:relative;
+    top:0;
+    left:50%;
+    width:4px;
+    height:100%;
+    background-color: #007bff;
+    transform: translateX(-50%);
+}
+
+.timeline ul{
+    list-style: none;
     padding: 0;
+    margin: 0;
 }
 
-.skills li {
-    display:inline-block;
-    margin:10 px;
-    padding: 10px 20px;
-    background-color: #282c34;
-    color: white;
-    border-radius: 5px;
+.timeline-item{
+    position: relative;
+    padding: 20px;
+    margin: 50px,0;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    opacity:0;
+    transform:translateY(20px);
+    animation: fadeInUp 0.5s forwards;
+}
+
+.timeline-item:nth-child(1) { animation-delay: 0.5s; }
+.timeline-item:nth-child(2) { animation-delay: 1s; }
+.timeline-item:nth-child(3) { animation-delay: 1.5s; }
+.timeline-item:nth-child(4) { animation-delay: 2s; }
+.timeline-item:nth-child(5) { animation-delay: 2.5s; }
+
+
+@keyframes fadeInUp{
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Add a small circle on the timeline bar */
+.timeline-item::before{
+    content:'';
+    position: absolute;
+    top:50%;
+    left:-8px;
+    width:16px;
+    height:16px;
+    background-color: #4e88c5;
+    border-radius: 50%;
+    transform: translateY(-50%);
 }

@@ -18,20 +18,28 @@ const Contact = () => {
 
   return (
     <section id="contact" className="contact">
-      <div>
+      <div className="contact-container">
+        <div className="contact-photo">
+          <div className="image-container"><img src="/mobile convocation.jpg" alt="Mamata Khanal"/>
+          </div>
+        <h2> Mamata Khanal</h2> </div>
+        </div>
+        <div className="contact-content">
         <h2>Contact Me</h2>
         <form onSubmit={handleSubmit}>
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Your Email" required />
-          <textarea placeholder="Your Message"></textarea>
+          <input type="text" placeholder="Your name" required />
+          <input type="email" placeholder="Your email" required />
+          <input type="number" placeholder="Your phone no"/>
+          <textarea placeholder=" Enter Your Message"></textarea>
           <button type="submit">Send</button>
         </form>
         {submitted && (
-          <p className="success-message">Message sent successfully!</p>
+          <p className="success-message">Message sent successfully!! </p>
         )}{" "}
         {/* Success message */}
       </div>
     </section>
+    
   );
 };
 
